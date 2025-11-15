@@ -1,45 +1,5 @@
 # Trabalho Laboratorial — Pima Indians Diabetes Dataset
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ADEUSSSSS
-
-
-
-
-
-
-
-
-
-
-OLÁ
-
 ## 1. Dados
 
 Os dados disponibilizados encontram-se no ficheiro `pimaDiabetes.p`.
