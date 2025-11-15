@@ -50,9 +50,7 @@ Para isto, é necessário:
 
 ### 2. Pré-processamento dos Dados
 
-Investigar se a **normalização dos dados**  
-(média nula e variância unitária)  
-melhora o desempenho dos classificadores.
+Investigar se a **normalização dos dados** (média nula e variância unitária)  melhora o desempenho dos classificadores.
 
 ---
 
