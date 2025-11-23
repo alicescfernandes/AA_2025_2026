@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Pre-commit hook to backup tp1.ipynb as tp1_alice.ipynb in the backups folder
+
+# Define paths
+NOTEBOOK_PATH="TP1/tp1.ipynb"
+BACKUP_DIR="TP1/backups"
+WHOAMI=$(whoami)
+# Get current timestamp
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+BACKUP_FILE="$BACKUP_DIR/tp1_$WHOAMI_$TIMESTAMP.ipynb"
+
+# Check if the notebook exists
+if [ -f "$NOTEBOOK_PATH" ]; then
+    # Create backup directory if it doesn't exist
+    mkdir -p "$BACKUP_DIR"
+    
+    # Copy the notebook to the backup location
+    cp "$NOTEBOOK_PATH" "$BACKUP_FILE"
+    
+    echo "Backed up $NOTEBOOK_PATH to $BACKUP_FILE"
+fi
+
+# Exit successfully to allow the commit to proceed
+exit 0
