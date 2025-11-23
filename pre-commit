@@ -5,7 +5,8 @@
 # Define paths
 NOTEBOOK_PATH="TP1/tp1.ipynb"
 BACKUP_DIR="TP1/backups"
-WHOAMI=$(whoami)
+# Get username from git config or environment
+WHOAMI=$(git config user.name || echo "user")
 # Get current timestamp
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 BACKUP_FILE="$BACKUP_DIR/tp1_${WHOAMI}_${TIMESTAMP}.ipynb"
