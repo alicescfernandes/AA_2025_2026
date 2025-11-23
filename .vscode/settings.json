@@ -1,0 +1,10 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "TP1/tp1\\.ipynb$",
+                "cmd": "bash ${workspaceFolder}/pre-commit"
+            }
+        ]
+    }
+}

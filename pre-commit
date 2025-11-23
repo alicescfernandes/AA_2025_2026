@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # Pre-commit hook to backup tp1.ipynb as tp1_alice.ipynb in the backups folder
+# Git is not very good with merge conflicts on jupyter notebooks, so this helps keep local backups of the files
+# i also tried the local history, but even that plugin is not being helpfull
 
 # Define paths
 NOTEBOOK_PATH="TP1/tp1.ipynb"
