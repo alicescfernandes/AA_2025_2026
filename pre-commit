@@ -5,13 +5,13 @@
 # i also tried the local history, but even that plugin is not being helpfull
 
 # Define paths
-NOTEBOOK_PATH="TP1/tp1.ipynb"
-BACKUP_DIR="TP1/backups"
+NOTEBOOK_PATH="TP2/tp2.ipynb"
+BACKUP_DIR="TP2/backups"
 # Get username from git config or environment
 WHOAMI=$(whoami)
 # Get current timestamp
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
-BACKUP_FILE="$BACKUP_DIR/tp1_${WHOAMI}_${TIMESTAMP}.ipynb"
+BACKUP_FILE="$BACKUP_DIR/tp2_${WHOAMI}_${TIMESTAMP}.ipynb"
 
 # Check if the notebook exists
 if [ -f "$NOTEBOOK_PATH" ]; then
