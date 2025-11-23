@@ -8,7 +8,7 @@ BACKUP_DIR="TP1/backups"
 WHOAMI=$(whoami)
 # Get current timestamp
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
-BACKUP_FILE="$BACKUP_DIR/tp1_$WHOAMI_$TIMESTAMP.ipynb"
+BACKUP_FILE="$BACKUP_DIR/tp1_${WHOAMI}_${TIMESTAMP}.ipynb"
 
 # Check if the notebook exists
 if [ -f "$NOTEBOOK_PATH" ]; then
